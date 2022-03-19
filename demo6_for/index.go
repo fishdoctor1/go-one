@@ -4,8 +4,9 @@ import "fmt"
 
 func main() {
 	//fnFor()
-	//fnWhile()
-	forEach()
+	// fnWhile()
+	// forEach()
+	fnWhileBreak()
 }
 
 func fnFor() {
@@ -29,7 +30,7 @@ func forEach() {
 		fmt.Printf("%d. %s\n", index, item)
 	}
 
-	for _, item := range courses {
+	for _, item := range courses { //_ ใช้เมื่อไม่ต้องการใช้งานตัวแปร index เดี๋ยวมันจะ แดง
 		fmt.Printf("%s\n", item)
 	}
 }
@@ -37,7 +38,7 @@ func forEach() {
 func fnWhileBreak() {
 	index := 0
 	for true {
-		if index < 5 {
+		if index > 5 {
 			break
 		}
 		fmt.Printf("While-Index %d\n", index)
