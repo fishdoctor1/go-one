@@ -1,3 +1,3 @@
-module demo16_struct_with_constructor
+module demo15_struct_separate_package
 
 go 1.17
