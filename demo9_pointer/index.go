@@ -34,4 +34,6 @@ func changeMessage2(aPointer *string, newM string) {
 	// หัวฟังชัน รับ value pointer รับค่าต้องเป็น value pointer
 	// &aPointer เปลี่ยนไปเสมอ แต่ &msg ยังคงตำแหน่งเดิม
 
+	//some time access value like *(&aPointer)
+
 }
