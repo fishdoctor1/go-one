@@ -8,8 +8,8 @@
             "name": "Launch Package",
             "type": "go",
             "request": "launch",
-            "mode": "debug",
-            "program": "${workspaceFolder}\\demo1\\index.go"
-        }
+            "mode": "auto",
+            "program": "${fileDirname}"
+        } 
     ]
 }

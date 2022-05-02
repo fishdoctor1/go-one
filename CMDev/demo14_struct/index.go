@@ -17,12 +17,21 @@ func main() {
 	show(p1)
 }
 
+type KG float64
+type LB float64
 type product struct {
 	name  string
 	price int
 	stock int
 }
 
+func compareLB_KB() {
+	a := KG(3)
+	b := LB(3)
+	fmt.Println(a)
+	fmt.Println(b)
+	// fmt.Println(a == b) //cannot compare a == b (mismatched types KG and LB)
+}
 func (p product) clear() product {
 	//p product บอกว่า เป็นฟังชันของ struct ไหน
 	//clear() function name
