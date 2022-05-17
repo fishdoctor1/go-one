@@ -88,7 +88,7 @@ func inventoryFunc(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("price"))
 	default:
 		w.WriteHeader(http.StatusNotFound)
-		fmt.Fprintf(w, "sorry %s", r.URL)
+		fmt.Fprintf(w, "sorry imfrom head2 %s", r.URL)
 
 	}
 }
