@@ -11,10 +11,14 @@ func run1() {
 	}
 }
 
-func run2() {
-	for i := 0; i < 100; i++ {
+func run2(ch chan int) {
+	for i := 0; i < 1; i++ {
 		fmt.Println("Run2", i)
 	}
+	defer func(aa int) {
+		ch <- aa
+	}(555)
+	return
 }
 
 func main() {
@@ -23,8 +27,9 @@ func main() {
 	msg := <-ch             // get value chanel to msg
 	fmt.Println(msg)
 	fmt.Println("step1")
+	run2(ch)
 	fmt.Println(<-ch) // for undeadlock
-
+	// return
 	ch <- 2
 	fmt.Println("step2")
 	fmt.Println(<-ch) // for undeadlock
