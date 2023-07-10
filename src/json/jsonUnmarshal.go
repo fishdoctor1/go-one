@@ -53,8 +53,9 @@ type User []struct {
 // }]`
 
 func main() {
-	format1()
-	format2()
+	// format1()
+	// format2()
+	testUnmarshalArrayObject()
 }
 
 func format1() {
