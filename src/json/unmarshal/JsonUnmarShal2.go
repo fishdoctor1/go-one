@@ -16,6 +16,7 @@ type MyStruct []struct {
 
 func main() {
 	var payload MyStruct
+	//
 	sampleRegexp := regexp.MustCompile(`\\"`)
 	result := sampleRegexp.ReplaceAllString(sampleJson, "\"")
 	fmt.Println(string(result))
